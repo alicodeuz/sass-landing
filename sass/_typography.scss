@@ -12,7 +12,7 @@
 
 $size: 10;
 $max-size: 120;
-@while $size < $max-size {
+@while $size <=$max-size {
     .fs-#{$size} {
         font-size: #{$size}px;
     }

@@ -1,0 +1,26 @@
+#about {
+    p {
+        line-height: 1.6;
+    }
+    .btn-group {
+        border: 1px solid rgba(255, 255, 255, .05);
+        .btn {
+            width: 100%;
+            background-color: #2a2c47;
+            color: #cacbd2;
+            height: 47px;
+            border-radius: 0;
+            border-right: 1px solid rgba(255, 255, 255, .05);
+            outline: 0;
+            &:hover,
+            &:focus,
+            &.active {
+                background-color: $orange;
+                color: $dark;
+            }
+        }
+    }
+    #tab-wrapper {
+        background-color: $dark-50;
+    }
+}

@@ -3,6 +3,10 @@
 @import '_utils';
 @import '_grid';
 @import '_typography';
+
+@import 'footer';
+@import '_spacing.scss';
+
 body {
     margin: 0;
     background-color: $dark;
@@ -28,6 +32,7 @@ b {
     padding: 0 15px;
     margin: auto;
 }
+
 
 
 
@@ -108,4 +113,8 @@ b {
 
 
 
+
+
+@import './sections/_hero';
+@import './sections/_about';
 
