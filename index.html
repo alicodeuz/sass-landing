@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -44,31 +45,30 @@
             </div>
         </section>
 
-    <script src="js/about-page.js"></script>
         <section id="about">
             <div class="container">
                 <div class="row btn-group">
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg btn-active active">About</button>
+                        <button class="btn toggle-btn btn-lg btn-active active">About</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Skills</button>
+                        <button class="toggle-btn btn btn-lg">Skills</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Service</button>
+                        <button class="toggle-btn btn btn-lg">Service</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Interview</button>
+                        <button class="toggle-btn btn btn-lg">Interview</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Award</button>
+                        <button class="toggle-btn btn btn-lg">Award</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Exibition</button>
+                        <button class="toggle-btn btn btn-lg">Exibition</button>
                     </div>
                 </div>
                 <div id="tab-wrapper" class="px-20 py-30">
-                    <div id="tab-about" class="inner-tab text-white">
+                    <div id="tab-about" class="active inner-tab text-white">
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="assets/images/about/about.png" alt="About me">
@@ -91,36 +91,282 @@
                             </div>
                         </div>
                     </div>
+                    <div id="tab-skills" class="inner-tab text-white">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">COMMUNICATION</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">ORGANIZATION</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">ANALYTICAL ABILITIES</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">CREATIVITY</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">PROJECT MANAGEMENT</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">PERSEVERANCE</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">PROBLEM SOLVING</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__item">
+                                    <div class="skills__item-header">
+                                        <div class="progress-title">RESOURCEFULNESS</div>
+                                        <div>75%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-value" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-service" class=" inner-tab text-white">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/service-1.png" alt="">                                        
+                                <h2>Business Strategy</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/service-2.png" alt="">                                            
+                                <h2>Brand Strategy</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/service-3.png" alt="">                                        
+                                <h2>Visual Design</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/service-4.png" alt="">                                        
+                                <h2>Product Design</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/06/service-5.png" alt="">                                        
+                                <h2>Interactive Design</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/service-6.png" alt="">                                        
+                                <h2>Motion Graphic</h2>
+                                <p>
+                                    Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-interview" class=" inner-tab text-white">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/interview-1.jpg" alt="">
+                                <div>
+                                    <h2>Business Strategy</h2>
+                                    <p>There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <a href="index.html">SEA MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/interview-4.jpg" alt="">
+                                <div>
+                                    <h2>Business Strategy</h2>
+                                    <p>There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <a href="index.html">SEA MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/interview-2.jpg" alt="">
+                                <div>
+                                    <h2>Business Strategy</h2>
+                                    <p>There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <a href="index.html">SEA MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/interview-3.jpg" alt="">
+                                <div>
+                                    <h2>Business Strategy</h2>
+                                    <p>There are many variations of passages lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <a href="index.html">SEA MORE <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-award" class="inner-tab text-white">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/award-1.png" alt="">
+                                <div>
+                                    <h2>Awards Name Here</h2>
+                                    <p>Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/award-2.png" alt="">
+                                <div>
+                                    <h2>Awards Name Here</h2>
+                                    <p>Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/award-3.png" alt="">
+                                <div>
+                                    <h2>Awards Name Here</h2>
+                                    <p>Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 text-start">
+                                <img src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/05/award-4.png" alt="">
+                                <div>
+                                    <h2>Awards Name Here</h2>
+                                    <p>Strategy develop customer in organisational knowledge and market perspectives that inform and provoke.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-exhibition" class="inner-tab text-white">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                                
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                            
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                            
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                            
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                            
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="title">
+                                    <a class="img-modal"></a>
+                                    <p>
+                                        Can you help translate this <br> site into a foreign?
+                                    </p>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div id="img-modal" class="img-modal">
+        <div class="black-background"></div>
+        <div class="img-modal__header">
+            <i class="fas fa-expand img-modal__header-fullScreenToggle"></i>
+            <i class="fas fa-search-plus img-modal__header-plusToggle"></i>
+            <i class="fas fa-share img-modal__header-shareToggle">
+                <div class="dropdown-menu">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i> <span>Share on Facebook</span></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> <span>Share on Twitter</span></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i> <span>Pin it</span></a>
+                    <a href="" id="download-img" download ><i class="fas fa-download"></i><span>Download image</span></a>
+                </div>
+            </i>
+            <i class="fas fa-times img-modal__header-closeToggle"></i>
+        </div>
+        <div class="modal-img">
+            
+        </div>
+    </div>
 
 
 
@@ -149,6 +395,9 @@
             <p style="color: rgba(255, 255, 255, 0.555);">Copyright By@Example - 2019</p>
         </div>
     </footer>
+
+    <script src="js/about-page.js"></script>
+    <script src="js/img-modal.js"></script>
 
 </body>
 
