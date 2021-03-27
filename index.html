@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alisher Musurmonov - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,26 +49,26 @@
             <div class="container">
                 <div class="row btn-group">
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg btn-active active">About</button>
+                        <button class="btn btn-lg" data-target="#tab-about" onclick="setActiveButton(this)">About</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Skills</button>
+                        <button class="btn btn-lg" data-target="#tab-skills" onclick="setActiveButton(this)">Skills</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Service</button>
+                        <button class="btn btn-lg" data-target="#tab-services" onclick="setActiveButton(this)">Service</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Interview</button>
+                        <button class="btn btn-lg" data-target="#tab-interview" onclick="setActiveButton(this)">Interview</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Award</button>
+                        <button class="btn btn-lg" data-target="#tab-award" onclick="setActiveButton(this)">Award</button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn btn-lg">Exibition</button>
+                        <button class="btn btn-lg" data-target="#tab-exibition" onclick="setActiveButton(this)">Exibition</button>
                     </div>
                 </div>
                 <div id="tab-wrapper" class="px-20 py-30">
-                    <div id="tab-about" class="inner-tab text-white">
+                    <div id="tab-about" class="inner-tab text-white py-30">
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="assets/images/about/about.png" alt="About me">
@@ -91,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div id="tab-skills" class="inner-tab active text-white">
+                    <div id="tab-skills" class="inner-tab text-white py-30">
                         <div class="row">
                             <div class="col-md-6 px-16 mb-20">
                                 <div class="progress-title">
@@ -168,6 +169,175 @@
 
                         </div>
                     </div>
+
+                    <div id="tab-services" class="inner-tab text-white py-30">
+                        <div class="row services">
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-airbnb text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-facebook text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-twitter text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-youtube text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-instagram text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+                            <div class="col-md-4 px-16 mb-20 services-item">
+                                <i class="fab fa-telegram text-active services-item__icon"></i>
+                                <h3 class="services-title">Business Strategy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt saepe cupiditate ut!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="tab-interview" class="inner-tab active text-white py-30">
+                        <div class="row interview">
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview9.webp" alt="Abdulloh" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdullohning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview8.jpeg" alt="Abdulhamid" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdulhamidning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview7.webp" alt="Xondamir" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Xondamirning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview6.webp" alt="Jamshid" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Jamshidning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview5.webp" alt="Zafar" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Zafarning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview4.webp" alt="Kamola" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Kamolaning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-award" class="inner-tab text-white py-30">
+                        <div class="row interview">
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview9.webp" alt="Abdulloh" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdullohning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview9.webp" alt="Abdulloh" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdullohning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview9.webp" alt="Abdulloh" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdullohning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 interview__item px-16 mb-36">
+                                <img src="assets/images/about/interview9.webp" alt="Abdulloh" class="interview__item-img">
+                                <div class="interview__item-content">
+                                    <h3>Abdullohning uyi</h3>
+                                    <p class="my-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet ducimus soluta architecto laudantium dolorum. In, a?</p>
+                                    <a href="#">Learn more <i class="fas fa-chevron-right text-active"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-exibition" class="inner-tab text-white py-30">
+                        <div class="row exibition">
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+                                    <img src="assets/images/about/interview1.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+
+                                    <img src="assets/images/about/interview2.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+                                    <img src="assets/images/about/interview3.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+                                    <img src="assets/images/about/interview4.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+                                    <img src="assets/images/about/interview5.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 exibition__item p-16">
+                                <div class="exibition__item-wrapper">
+                                    <img src="assets/images/about/interview6.webp" alt="">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -199,7 +369,7 @@
             <p style="color: rgba(255, 255, 255, 0.555);">Copyright By@Example - 2019</p>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
