@@ -1,48 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alisher Musurmonov - Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+
+  <body>
     <header class="header">
-        <nav class="header__nav container">
-            <a href="#" class="header__nav-link">
-                <img src="assets/images/logo.png" alt="Logo">
-            </a>
-            <ul class="header__nav-menu">
-                <li><a href="#" class="active">Asosiy</a></li>
-                <li><a href="#">Men haqimda</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button class="btn btn-lg btn-outline-active">Let's Chat</button></li>
-            </ul>
-        </nav>
+      <nav class="header__nav container">
+        <a href="#" class="header__nav-link">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </a>
+        <ul class="header__nav-menu">
+          <li><a href="#" class="active">Asosiy</a></li>
+          <li><a href="#">Men haqimda</a></li>
+          <li><a href="#">Price</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button class="btn btn-lg btn-outline-active">Let's Chat</button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pt-50">
-                        <h2 class="text-active mt-0 mb-16 hero-subtitle fs-40">Hello, I'm</h2>
-                        <h1 class="text-white hero-title mt-10 mb-44 fs-100">Alisher <br> Musurmonov</h1>
-                        <h2 class="text-white fs-30">Javascript developer</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="assets/images/me.png" alt="Alisher Musurmonov">
-                    </div>
-                </div>
-
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 pt-50">
+              <h2 class="text-active mt-0 mb-16 hero-subtitle fs-40">
+                Hello, I'm
+              </h2>
+              <h1 class="text-white hero-title mt-10 mb-44 fs-100">
+                Alisher <br />
+                Musurmonov
+              </h1>
+              <h2 class="text-white fs-30">Javascript developer</h2>
             </div>
+            <div class="col-md-6">
+              <img src="assets/images/me.png" alt="Alisher Musurmonov" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="row btn-group">
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg btn-active active">About</button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg">Skills</button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg">Service</button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg">Interview</button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg">Award</button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-lg">Exibition</button>
+            </div>
+
+          </div>
+          <div id="tab-wrapper" class="px-20 py-30">
+            <div id="tab-about" class="inner-tab text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="assets/images/about/about.png" alt="About me" />
+                </div>
+                <div class="col-6">
+                  <div class="text-active">About me</div>
+                  <h2>Why hire me for your next project?</h2>
+                  <p>
+                    Meet my startup design agency
+                    <span class="text-active">Shape Rex </span>Currently I am
+                    working at <span class="text-active">CodeNext</span> as
+                    Product Designer. Before that I’ve worked at
+                    <span class="text-active">SpurBee</span>, Dhaka as a UX, UI
+                    Designer.
+                  </p>
+                  <p>
+                    I love to work in User Experience & User Interface
+                    designing. Because I love to solve the design problem and
+                    find easy and better solutions to solve it. I always try my
+                    best to make good user interface with the best user
+                    experience. I have been working as a Visual designer from.
+                  </p>
+                  <div>
+                    <button class="btn btn-lg btn-outline-active">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="testimonials-header container">
+          <div>
+            <p class="fs-14 p-0 mb-4">TESTIMONIALS</p>
+            <h2 class="fs-40 p-0 m-0">Happy Clients Says</h2>
+          </div>
+          <div>
+            <ul class="slide">
+              <li>
+                <a href="#!" class="py-10 px-16 previous"
+                  ><i class="fas fa-long-arrow-alt-left"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#!" class="py-10 px-16 next"
+                  ><i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container clients">
+          <div class="block p-40">
+            <div class="card-header">
+              <span class="row">
+                <span>
+                  <img src="assets/images/clients.png" alt="" />
+                </span>
+                <span>
+                  <h4 class="fs-24 m-0 pt-2">Martha Sandoval</h4>
+                  <p class="fs-12 m-0 p-0">Product Designer at CodeNext</p>
+                </span>
+              </span>
+              <img src="assets/images/quote.png" alt="" class="quote" />
+            </div>
+            <div class="card-body mt-40">
+              <p class="fs-18">
+                We are motivated by the satisfaction of our clients. Put your
+                trust in us and share in our growth Asset Management is made up
+                of a team of expert, committed and experienced people with a
+                passion for financial markets. Our goal is to achieve
+                continuous.
+              </p>
+            </div>
+          </div>
+          <div class="block p-40">
+            <div class="card-header">
+              <span class="row">
+                <span>
+                  <img src="assets/images/clients.png" alt="" />
+                </span>
+                <span>
+                  <h4 class="fs-24 m-0 pt-2">Martha Sandoval</h4>
+                  <p class="fs-12 m-0 p-0">Product Designer at CodeNext</p>
+                </span>
+              </span>
+              <img src="assets/images/quote.png" alt="" class="quote" />
+            </div>
+            <div class="card-body mt-40">
+              <p class="fs-18">
+                We are motivated by the satisfaction of our clients. Put your
+                trust in us and share in our growth Asset Management is made up
+                of a team of expert, committed and experienced people with a
+                passion for financial markets. Our goal is to achieve
+                continuous.
+              </p>
+
         </section>
 
         <section id="about">
@@ -341,9 +500,73 @@
                 </div>
 
             </div>
+
             </div>
-        </section>
+          </div>
+          <div class="block p-40">
+            <div class="card-header">
+              <span class="row">
+                <span>
+                  <img src="assets/images/clients.png" alt="" />
+                </span>
+                <span>
+                  <h4 class="fs-24 m-0 pt-2">Martha Sandoval</h4>
+                  <p class="fs-12 m-0 p-0">Product Designer at CodeNext</p>
+                </span>
+              </span>
+              <img src="assets/images/quote.png" alt="" class="quote" />
+            </div>
+            <div class="card-body mt-40">
+              <p class="fs-18">
+                We are motivated by the satisfaction of our clients. Put your
+                trust in us and share in our growth Asset Management is made up
+                of a team of expert, committed and experienced people with a
+                passion for financial markets. Our goal is to achieve
+                continuous.
+              </p>
+            </div>
+          </div>
+          <div class="block p-40">
+            <div class="card-header">
+              <span class="row">
+                <span>
+                  <img src="assets/images/clients-2.png" alt="" />
+                </span>
+                <span>
+                  <h4 class="fs-24 m-0 pt-2">Martha Sandoval</h4>
+                  <p class="fs-12 m-0 p-0">Product Designer at CodeNext</p>
+                </span>
+              </span>
+              <img src="assets/images/quote.png" alt="" class="quote" />
+            </div>
+            <div class="card-body mt-40">
+              <p class="fs-18">
+                We are motivated by the satisfaction of our clients. Put your
+                trust in us and share in our growth Asset Management is made up
+                of a team of expert, committed and experienced people with a
+                passion for financial markets. Our goal is to achieve
+                continuous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer></footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="testimonial.js"></script>
+  </body>
+</html>
+
 
     <footer>
         <div class="container">
@@ -373,3 +596,4 @@
 </body>
 
 </html>
+
