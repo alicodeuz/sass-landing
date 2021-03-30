@@ -1,9 +1,16 @@
 $(document).ready(function () {
+  $(".previous").click(function () {
+    $(".clients").slick("slickPrev");
+  });
+  $(".next").click(function () {
+    $(".clients").slick("slickNext");
+  });
   $(".clients").slick({
+    arrows: false,
     autoplay: true,
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [
@@ -30,9 +37,6 @@ $(document).ready(function () {
           slidesToScroll: 1,
         },
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ],
   });
 });

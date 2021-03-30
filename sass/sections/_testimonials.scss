@@ -13,6 +13,7 @@
   min-height: 100vh;
   background-color: rgba(49, 53, 82, 0.25);
   .slide {
+    position: relative !important;
     display: flex;
     li {
       list-style: none;
@@ -22,7 +23,7 @@
           color: $dark-75;
           transition: 0.3s;
         }
-        &:focus {
+        &:hover {
           background: $orange;
           color: $dark-75;
           transition: 0.3s;

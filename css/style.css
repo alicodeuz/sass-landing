@@ -4451,6 +4451,7 @@ b {
   color: white;
 }
 #testimonials .slide {
+  position: relative !important;
   display: flex;
 }
 #testimonials .slide li {
@@ -4471,7 +4472,7 @@ b {
   color: #383b58;
   transition: 0.3s;
 }
-#testimonials .slide li a:focus {
+#testimonials .slide li a:hover {
   background: #ffc576;
   color: #383b58;
   transition: 0.3s;
